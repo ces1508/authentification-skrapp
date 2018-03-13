@@ -1,4 +1,5 @@
-const {JwtStrategy, ExtactJwt} = require('passport-jwt')
+const JwtStrategy = require('passport-jwt').Strategy
+const ExtactJwt = require('passport-jwt').ExtractJwt
 const jwtOptions = {}
 const SECRET = process.env.SECRET_TOKEN
 jwtOptions.jwtFromRequest = ExtactJwt.fromAuthHeaderAsBearerToken()
