@@ -1,0 +1,23 @@
+{
+  "name": "authenfication",
+  "version": "1.0.0",
+  "description": "strategia de authenficacion para passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ces1508/strategy-skrapp-Bs.git"
+  },
+  "author": "ces1508 <ces1508@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ces1508/strategy-skrapp-Bs/issues"
+  },
+  "homepage": "https://github.com/ces1508/strategy-skrapp-Bs#readme",
+  "dependencies": {
+    "passport-jwt": "^4.0.0",
+    "request": "^2.85.0"
+  }
+}
