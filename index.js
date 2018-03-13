@@ -1,10 +1,10 @@
 const JwtStrategy = require('passport-jwt').Strategy
 const ExtactJwt = require('passport-jwt').ExtractJwt
 const jwtOptions = {}
-const SECRET = process.env.SECRET_TOKEN
+const SECRET = process.env.SECRET_TOKEN || '123'
 jwtOptions.jwtFromRequest = ExtactJwt.fromAuthHeaderAsBearerToken()
 jwtOptions.secretOrKey = SECRET
-const APIKEY = process.env
+const APIKEY = process.env.TOKEN_APP || '123'
 const request = require('request')
 
 const Strategy = new JwtStrategy(jwtOptions, (payload, done) => {
