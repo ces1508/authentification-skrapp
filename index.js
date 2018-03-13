@@ -24,7 +24,7 @@ const Strategy = new JwtStrategy(jwtOptions, (payload, done) => {
 
 const verifyClient = (req, res, next) => {
   let { headers } = req
-  if (!headers['x-api-key'] || headers['x-api-key'] !== APIKEY) res.status(401).json({ error: true, message: 'Unauthorized' })
+  if (!headers['x-api-key'] || headers['x-api-key'] !== APIKEY) return res.status(401).json({ error: true, message: 'Unauthorized' })
   next()
 }
 
