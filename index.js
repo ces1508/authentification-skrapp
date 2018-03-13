@@ -22,10 +22,10 @@ const Strategy = new JwtStrategy(jwtOptions, (payload, done) => {
   })
 })
 
-exports.verifyClient = (req, res, next) => {
+const verifyClient = (req, res, next) => {
   let { headers } = req
   if (!headers['x-api-key'] || headers['x-api-key'] !== APIKEY) res.status(401).json({ error: true, message: 'Unauthorized' })
   next()
 }
 
-module.exports = Strategy
+module.exports = {Strategy, verifyClient}
