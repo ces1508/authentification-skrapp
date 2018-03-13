@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ces1508/strategy-skrapp-Bs.git"
+    "url": "git+https://github.com/ces1508/authentification-skrapp.git"
   },
   "author": "ces1508 <ces1508@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ces1508/strategy-skrapp-Bs/issues"
+    "url": "https://github.com/ces1508/authentification-skrapp/issues"
   },
-  "homepage": "https://github.com/ces1508/strategy-skrapp-Bs#readme",
+  "homepage": "https://github.com/ces1508/authentification-skrapp#readme",
   "dependencies": {
     "passport-jwt": "^4.0.0",
     "request": "^2.85.0"
